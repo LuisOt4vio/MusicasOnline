@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas Online</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    <link rel="stylesheet" type="text/css" href="CSS/EstiloHome/estilohome.css">
+    <link rel="shortcut icon" href="IMAGENS HEADER/Music_icon-icons.com_76892.webp">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMAGENS HEADER/Music_icon-icons.com_76892.webp" alt="Logo do Site">
+        </div>
+        <div class="titulo">
+            <h1 class="on-music">On</h1>
+            <h1 class="on-music">Music</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="menu-gênero"><a href="#">Gênero</a>
+                    <ul class="submenu">
+                        <li><a href="htmls/Generos/funk.html">Funk</a></li>
+                        <li><a href="htmls/Generos/rap.html">Rap</a></li>
+                        <li><a href="htmls/Generos/rock.html">Rock</a></li>
+                        <li><a href="htmls/Generos/sertanejo.html">Sertanejo</a></li>
+                        <li><a href="htmls/Generos/pop.html">Pop</a></li>
+                        <li><a href="htmls/Generos/pagode.html">Pagode</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Álbum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="video-fundo">
+            <video autoplay loop muted>
+                <source src="IMAGENS HOME/VideoClipeHome/Video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <div class="carrossel">
+            <div class="titulo-carrossel">
+                <h2 class="font">Músicas Mais Ouvidas</h2>
+                <p class="font">Explore os singles mais populares em cada categoria musical.</p>
+            </div>
+
+            <input type="radio" name="carrossel" id="slide1" checked>
+            <input type="radio" name="carrossel" id="slide2">
+            <input type="radio" name="carrossel" id="slide3">
+            <input type="radio" name="carrossel" id="slide4">
+            <input type="radio" name="carrossel" id="slide5">
+            <input type="radio" name="carrossel" id="slide6">
+
+            <div class="carrossel-interno">
+                <div class="slide-carrossel">
+                    <div class="conteudo-slide">
+                        <a href="#hariel">
+                            <img src="IMAGENS HOME/FUNK/Até o Sol Raiar.jpg" alt="Imagem 1">
+                        </a>
+                        <div class="info-slide">
+                            <a href="#hariel"><h3>Até o Sol Raiar</h3></a>
+                            <a href="htmls/Generos/funk.html"><p>Funk</p></a>
+                        </div>
+                    </div>
+                    <label for="slide6" class="seta anterior">&#10094;</label>
+                    <label for="slide2" class="seta proximo">&#10095;</label>
+                </div>
+                <div class="slide-carrossel">
+                    <div class="conteudo-slide">
+                        <a href="#eminem">
+                            <img src="IMAGENS HOME/RAP/superman.jpg" alt="Imagem 2">
+                        </a>
+                        <div class="info-slide">
+                            <a href="#eminem"><h3>Superman</h3></a>
+                            <a href="htmls/Generos/rap.html"><p>Rap</p></a>
+                        </div>
+                    </div>
+                    <label for="slide1" class="seta anterior">&#10094;</label>
+                    <label for="slide3" class="seta proximo">&#10095;</label>
+                </div>
+                <div class="slide-carrossel">
+                    <div class="conteudo-slide">
+                        <a href="#redhot">
+                            <img src="IMAGENS HOME/ROCK/californication.jpg" alt="Imagem 3">
+                        </a>
+                        <div class="info-slide">
+                            <a href="#redhot"><h3>Californication</h3></a>
+                            <a href="htmls/Generos/rock.html"><p>Rock</p></a>
+                        </div>
+                    </div>
+                    <label for="slide2" class="seta anterior">&#10094;</label>
+                    <label for="slide4" class="seta proximo">&#10095;</label>
+                </div>
+                <div class="slide-carrossel">
+                    <div class="conteudo-slide">
+                        <a href="#gusttavo">
+                            <img src="IMAGENS HOME/SERTANEJO/apelido carinhoso.jpg" alt="Imagem 4">
+                        </a>
+                        <div class="info-slide">
+                            <a href="#gusttavo"><h3>Apelido Carinhoso</h3></a>
+                            <a href="htmls/Generos/sertanejo.html"><p>Sertanejo</p></a>
+                        </div>
+                    </div>
+                    <label for="slide3" class="seta anterior">&#10094;</label>
+                    <label for="slide5" class="seta proximo">&#10095;</label>
+                </div>
+                <div class="slide-carrossel">
+                    <div class="conteudo-slide">
+                        <a href="#sen">
+                            <img src="IMAGENS HOME/POP/beautiful girls.jpg" alt="Imagem 5">
+                        </a>
+                        <div class="info-slide">
+                            <a href="#sen"><h3>Beautiful Girls</h3></a>
+                            <a href="htmls/Generos/pop.html"><p>Pop</p></a>
+                        </div>
+                    </div>
+                    <label for="slide4" class="seta anterior">&#10094;</label>
+                    <label for="slide6" class="seta proximo">&#10095;</label>
+                </div>
+                <div class="slide-carrossel">
+                    <div class="conteudo-slide">
+                        <a href="#turma">
+                            <img src="IMAGENS HOME/PAGODE/lancinho.jpg" alt="Imagem 6">
+                        </a>
+                        <div class="info-slide">
+                            <a href="#turma"><h3>Lancinho</h3></a>
+                            <a href="htmls/Generos/pagode.html"><p>Pagode</p></a>
+                        </div>
+                    </div>
+                    <label for="slide5" class="seta anterior">&#10094;</label>
+                    <label for="slide1" class="seta proximo">&#10095;</label>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div class="titulo-musicas">
+        <h2><span>Músicas</span></h2>
+    </div>
+    <div class="players-musica">
+        <div class="player">
+            <img src="IMAGENS HOME/FUNK/Tchau e Bença.jpg" alt="Tchau e Bença">
+            <div class="player-info">
+                <h3>Tchau e Bença</h3>
+                <p>Mc Livinho e Mc Pedrinho</p>
+                <p class="genre">Gênero: Funk</p>
+                <audio controls>
+                    <source src="MUSICAS/FUNK/MC Pedrinho e MC Livinho - Tchau e Bença (GR6 Filmes).mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/PAGODE/sua mãe vai me amar.jpg" alt="Sua mãe vai me amar">
+            <div class="player-info">
+                <h3>Sua Mãe Vai me Amar</h3>
+                <p>Turma do Pagode</p>
+                <p class="genre">Gênero: Pagode</p>
+                <audio controls>
+                    <source src="MUSICAS/PAGODE/Turma do Pagode - Sua Mãe Vai Me Amar (Misturadin 2 Ao Vivo).mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/POP/the lazy song.jpg" alt="The Lazy Song">
+            <div class="player-info">
+                <h3>The Lazy Song</h3>
+                <p>Bruno Mars</p>
+                <p class="genre">Gênero: Pop</p>
+                <audio controls>
+                    <source src="MUSICAS/POP/Bruno Mars - The Lazy Song (Official Music Video).mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/RAP/many man.jpg" alt="Many Man">
+            <div class="player-info">
+                <h3>Many Man</h3>
+                <p>50 Cent</p>
+                <p class="genre">Gênero: Rap</p>
+                <audio controls>
+                    <source src="MUSICAS/RAP/50 Cent - Many men (wish death).mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/ROCK/otherside.jpg" alt="Otherside">
+            <div class="player-info">
+                <h3>Otherside</h3>
+                <p>Red Hot Chili Peppers</p>
+                <p class="genre">Gênero: Rock</p>
+                <audio controls>
+                    <source src="MUSICAS/ROCK/Red Hot Chili Peppers - Otherside [Official Music Video].mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/SERTANEJO/flor e o beija-flor.jpg" alt="Flor e o Beija-Flor">
+            <div class="player-info">
+                <h3>Flor e o Beija-Flor</h3>
+                <p>Henrique e Juliano ft: Marília Mendonça</p>
+                <p class="genre">Gênero: Sertanejo</p>
+                <audio controls>
+                    <source src="MUSICAS/SERTANEJO/Henrique e Juliano - Flor E O Beija-Flor part. Marília Mendonça - DVD Novas Histórias.mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+
+
+
+        <div class="player">
+            <img src="IMAGENS HOME/FUNK/Até o Sol Raiar.jpg" alt="Até o Sol Raiar" id="hariel">
+            <div class="player-info">
+                <h3>Até o Sol Raiar</h3>
+                <p>Mc Hariel</p>
+                <p class="genre">Gênero: Funk</p>
+                <audio controls>
+                    <source src="MUSICAS/FUNK/MC Hariel - Até O Sol Raiar.mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/PAGODE/lancinho.jpg" alt="Lancinho" id="turma">
+            <div class="player-info">
+                <h3>Lancinho</h3>
+                <p>Turma do Pagode</p>
+                <p class="genre">Gênero: Pagode</p>
+                <audio controls>
+                    <source src="MUSICAS/PAGODE/Turma do Pagode - Lancinho ((O Som das Multidões Ao Vivo) [Clipe Oficial]).mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/POP/beautiful girls.jpg" alt="Beautiful Girls" id="sen">
+            <div class="player-info">
+                <h3>Beautiful Girls</h3>
+                <p>Sean Kingston</p>
+                <p class="genre">Gênero: Pop</p>
+                <audio controls>
+                    <source src="MUSICAS/POP/Sean Kingston - Beautiful Girls (Official HD Video).mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/RAP/superman.jpg" alt="Superman" id="eminem">
+            <div class="player-info">
+                <h3>Superman</h3>
+                <p>Eminem</p>
+                <p class="genre">Gênero: Rap</p>
+                <audio controls>
+                    <source src="MUSICAS/RAP/Eminem - Superman (Official Video - Dirty Version).mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/ROCK/californication.jpg" alt="Californication" id="redhot">
+            <div class="player-info">
+                <h3>Californication</h3>
+                <p>Red Hot Chili Peppers</p>
+                <p class="genre">Gênero: Rock</p>
+                <audio controls>
+                    <source src="MUSICAS/ROCK/Red Hot Chili Peppers - Californication (Official Music Video) [HD UPGRADE].mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/SERTANEJO/apelido carinhoso.jpg" alt="Apelido Carinhoso" id="gusttavo">
+            <div class="player-info">
+                <h3>Apelido Carinhoso</h3>
+                <p>Gusttavo Lima</p>
+                <p class="genre">Gênero: Sertanejo</p>
+                <audio controls>
+                    <source src="MUSICAS/SERTANEJO/Gusttavo Lima - Apelido Carinhoso - DVD Buteco do Gusttavo Lima 2 (Vídeo Oficial).mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/FUNK/Casei com a Putaria.jpg" alt="Casei com a Putaria">
+            <div class="player-info">
+                <h3>Casei com a Putaria</h3>
+                <p>Mc Paiva e Mc RyanSP</p>
+                <p class="genre">Gênero: Funk</p>
+                <audio controls>
+                    <source src="MUSICAS/FUNK/MC Paiva e MC Ryan SP - Casei Com a Putaria (Love Funk) Kotim.mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/POP/The Weeknd.jpg" alt="Earned It">
+            <div class="player-info">
+                <h3>Earned It</h3>
+                <p>The Weeknd</p>
+                <p class="genre">Gênero: Pop</p>
+                <audio controls>
+                    <source src="MUSICAS/POP/The Weeknd - Earned It (Fifty Shades Of Grey).mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/RAP/Gangsta's Paradise.jpg" alt="Gangsta's Paradise">
+            <div class="player-info">
+                <h3>Gangsta's Paradise</h3>
+                <p>Coolio</p>
+                <p class="genre">Gênero: Rap</p>
+                <audio controls>
+                    <source src="MUSICAS/RAP/Coolio - Gangsta's Paradise (Official Music Video) [HD] ft. L.V..mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+        <div class="player">
+            <img src="IMAGENS HOME/ROCK/Guns N' Roses.jpg" alt="Sweet Child O' Mine">
+            <div class="player-info">
+                <h3>Sweet Child O' Mine</h3>
+                <p>Guns N' Roses</p>
+                <p class="genre">Gênero: Rock</p>
+                <audio controls>
+                    <source src="MUSICAS/ROCK/Guns N' Roses - Sweet Child O' Mine (Official Music Video).mp3" type="audio/mp3">
+                    Seu navegador não suporta o player de áudio.
+                </audio>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer id="rodape">
+        <nav id="redes">
+            <ol>
+                <li><a href="#"><img src="IMAGENS RODAPÉ/face.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="IMAGENS RODAPÉ/tt.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="IMAGENS RODAPÉ/insta.png" alt="Instagram"></a></li>
+            </ol>
+        </nav>
+        <p id="direitos">&copy; 2024 - BCC | Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

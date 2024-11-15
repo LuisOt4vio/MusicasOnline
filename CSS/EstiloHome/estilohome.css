@@ -1,0 +1,344 @@
+/*Estilo do vídeo de fundo*/
+.video-fundo{
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    z-index: 0;
+    border-bottom: 3px solid #f2c700;
+}
+
+.video-fundo video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    filter: blur(15px);
+}
+
+/*Estilo do carrossel*/
+.carrossel{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+    padding: 20px 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.titulo-carrossel{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-carrossel h2{
+    font-size: 2rem;
+    color: #f2c700;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 10px;
+    display: inline-block;
+    background: linear-gradient(45deg, #000, #333);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.titulo-carrossel p{
+    font-size: 1rem;
+    color: #eee;
+    text-align: center;
+    margin: 0;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+
+.carrossel-interno{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 600%;
+}
+
+
+.slide-carrossel{
+    flex: 0 0 16.666%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slide-carrossel img{
+    display: block;
+    margin-left: 4.4%;
+    width: 90%;
+    height: auto;
+    border: 4px solid #f2c700;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    object-fit: cover;
+}
+
+.slide-carrossel img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.conteudo-slide{
+    position: relative;
+    width: 100%;
+}
+
+.info-slide{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f2c700;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.slide-carrossel:hover .info-slide{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+/*Controle dos slides*/
+input[type="radio"]{
+    display: none;
+}
+
+#slide1:checked ~ .carrossel-interno{
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .carrossel-interno{
+    transform: translateX(-16.666%);
+}
+
+#slide3:checked ~ .carrossel-interno{
+    transform: translateX(-33.333%);
+}
+
+#slide4:checked ~ .carrossel-interno{
+    transform: translateX(-50%);
+}
+
+#slide5:checked ~ .carrossel-interno{
+    transform: translateX(-66.666%);
+}
+
+#slide6:checked ~ .carrossel-interno{
+    transform: translateX(-83.333%);
+}
+
+/*Estilo das setas*/
+.seta{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #f2c700;
+    background: linear-gradient(135deg, #2c2c2c, #000000);
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border: 2px solid #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.seta::before{
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(135deg, #444, #111);
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.seta.anterior{
+    left: 20px;
+}
+
+.seta.proximo{
+    right: 20px;
+}
+
+.seta:hover{
+    transform: translateY(-50%) scale(1.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(135deg, #3d3d3d, #1a1a1a);
+}
+
+a{
+    text-decoration: none; 
+    color: inherit;
+}
+
+.titulo-musicas{
+    text-align: center;
+    margin: 40px 0;
+}
+    
+.titulo-musicas h2{
+    font-size: 2rem;
+    color: #FFD700;
+    font-family: arial;
+    font-weight: bold;
+    position: relative;
+    margin: 0;
+}
+    
+.titulo-musicas h2::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: #FFD700;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.players-musica{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.player{
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #1f1f1f, #292929);
+    border: 3px solid #ffcc00;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.player img{
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #ffcc00; 
+}
+
+.player-info{
+    padding: 20px;
+    color: #fff;
+}
+
+.player-info h3{
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.player-info p{
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.genre{
+    font-style: italic;
+    color: #ffcc00;
+}
+
+audio{
+    width: 100%;
+    margin-top: 10px;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 60px;
+    padding: 5px;
+}
+
+@media (max-width: 768px){
+    .video-fundo{
+        margin-top: 250px;
+    }
+    .carrossel{
+        width: 50%;
+        margin-top: 130px;
+    }
+    .seta{
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+    .info-slide{
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .video-fundo{
+        margin-top: 120px; 
+    }
+    .carrossel{
+        width: 50%;
+        margin-top: 120px;
+    }
+    .seta{
+        font-size: 2rem;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px){
+    .carrossel{
+        margin-top: 40px;
+    }
+    .seta{
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1201px){
+    .carrossel{
+        margin-top: 40px;
+    }
+    .seta{
+        font-size: 2rem; 
+        padding: 12px;
+    }
+}
+
